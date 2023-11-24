@@ -34,9 +34,9 @@ Bst *delete_me(Bst *root, int data){
         }
         //2. one child(left)
         else if(root->left == NULL){
-            Bst *temp = root;
-            root = root->right ;//want to remove the pointer to the root
-            delete temp;//temp dekha######################################
+            Bst *temp = root;//taking the copy of current node
+            root = root->right ;//moving the pointer to the right
+            delete temp;
         }
         else if(root->right == NULL){
             Bst *temp = root;
