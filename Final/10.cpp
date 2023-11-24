@@ -22,15 +22,15 @@ void preorder(Bst *root){
 //inorder
 void inorder(Bst *root){
     if(root==NULL) return;
-    inorder(root->left);
-    cout<<root->data<<endl;
-    inorder(root->right);
+    inorder(root->left);//left
+    cout<<root->data<<endl;//root
+    inorder(root->right);//right
 }
 
 //postorder
 void postorder(Bst *root){
     if(root==NULL) return;
-    postorder(root->left);
+    postorder(root->left);//
     postorder(root->right);
     cout<<root->data<<endl;
 }

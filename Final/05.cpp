@@ -63,10 +63,10 @@ int search(LL *nn,int data){
         return false;
     }
     else if(nn->data==data){
-        return true;
+        return true;//1
     }
     else if(nn->data!=data){
-        return search(nn->next,data);
+        return search(nn->next,data);//
     }
     else return false;
 }
@@ -84,7 +84,7 @@ int main(){
     root = insert(root,33);
     
     //display(root);
-    if(search(root, 15)==1) cout<<"Found"<<endl;
+    if(search(root, 15)==17) cout<<"Found"<<endl;
     else cout<<"Not Found"<<endl;
 
     

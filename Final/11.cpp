@@ -27,11 +27,13 @@ Bst *insert(int data, Bst *root){
         root = create_node(data);
     }
     // if data to be inserted is greater, insert in right subtree. 
+    //20>=15
     else if(data>= root->data){
         root->right = insert(data, root->right);//root->right = address of the data
     }
+    //10>=15
     else if(data<root->data){
-        root->left = insert(data, root->right);
+        root->left = insert(data, root->left);
     }
     return root;
 }

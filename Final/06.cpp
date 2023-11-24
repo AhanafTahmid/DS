@@ -1,7 +1,6 @@
 //Write a program to create a Linked List of n elements and then insert an element to the list.
 
 
-
 //Same as 4 number
 #include <bits/stdc++.h>
 using namespace std;

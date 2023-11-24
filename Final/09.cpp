@@ -40,7 +40,9 @@ void merge(int ar[],int l,int m, int h){
         ar[k] = temp[k-l];//
     }
 
+
 }
+
 
 void merge_sort(int ar[], int l,int h){
     if(l>=h){
@@ -49,7 +51,7 @@ void merge_sort(int ar[], int l,int h){
     int m = (l+h)/2;
     merge_sort(ar,l,m);//left half
     merge_sort(ar,m+1,h);//right half
-
+    
     //function to merge and sort the array
     merge(ar,l,m,h);
    

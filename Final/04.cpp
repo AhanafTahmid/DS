@@ -3,9 +3,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+
 struct LL{
     int data;
-    LL *next;
+    LL *next;//address
 };
 
 
@@ -33,7 +34,6 @@ LL *insert(LL *root,int data){
     }
 
     return root;
-
 }
 
 //root is the current data
@@ -45,7 +45,7 @@ void display(LL *root){
     // display(root->next);
 
     if(root==NULL) return;
-    cout<<root->data<<endl;
+    cout<<root->data<<" "<<root->next<<endl;
     display(root->next);
    
 
@@ -67,6 +67,7 @@ int main(){
     root = insert(root,1);
     root = insert(root,15);
     root = insert(root,33);
+    root = insert(root,366);
     
     display(root);
     

@@ -11,7 +11,6 @@ Sample Input:
 
 */
 
-
 #include <bits/stdc++.h>
 using namespace std;
 void adjacency_list(){
@@ -25,6 +24,7 @@ void adjacency_list(){
         graph[v2].push_back(v1);
 
     }
+
 
 
 

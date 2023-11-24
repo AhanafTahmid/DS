@@ -12,6 +12,7 @@ void non_recursive(int n){
     cout<<s<<endl;
 }
 
+
 //recursive method 1 - Using Parameterized function
 void recursive1(int n, int f){
     if(n==1){
@@ -21,6 +22,8 @@ void recursive1(int n, int f){
     f*=n;
     recursive1(n-1, f);
 }
+
+
 
 
 //recursive method 2 - Using Parameterized function, with global variable

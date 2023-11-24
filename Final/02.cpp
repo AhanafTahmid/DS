@@ -27,8 +27,8 @@ void non_recursive(int n){
 }
 
 
-
 //recursive method - Using Functional Recursion
+int nn;
 int recursive1(int n){
 
     if(n<=1){
@@ -48,6 +48,10 @@ int main(){
         non_recursive(k);
         cout<<recursive1(k-1);//1 dile base index hit, 2 dile base index hit, 3 dile 
 
+        for (int i = 0; i <=k; i++) {
+            cout<<recursive1(i)<<" ";
+            //cout << endl;
+        }
     };  
     return 0;
 }
